@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function MenuPlace() {
     function openNav() {
@@ -11,10 +11,33 @@ function MenuPlace() {
     <div className="menu-toggle">
         <div id="mySidenav" className="sidenav">
   <a href="javascript:void(0)" className="closebtn" onClick={closeNav}>&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <Link to='/'>
+  <a href="#">Home</a>
+  </Link>
+  <Link to='/section/1/'>
+  <a href="#">Action (set A)</a>
+  </Link>
+  <Link to='/section/2/'>
+  <a href="#">Action (set B)</a>
+  </Link>
+  <Link to='/section/3/'>
+  <a href="#">Action (set C)</a>
+  </Link>
+  <Link to='/section/4/'>
+  <a href="#">Adjective</a>
+  </Link>
+  <Link to='/section/5/'>
+  <a href="#">Animal (set A)</a>
+  </Link>
+  <Link to='/section/6/'>
+  <a href="#">Animal (set B)</a>
+  </Link>
+  <Link to='/section/7/'>
+  <a href="#">Clothes</a>
+  </Link>
+  <Link to='/section/8/'>
+  <a href="#">Emotional</a>
+  </Link>
 </div>
 <svg width="56px" height="47px" viewBox="0 0 56 47" version="1.1" xmlns="http://www.w3.org/2000/svg" onClick={openNav} >
     <title>happy-burger</title>

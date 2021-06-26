@@ -3,7 +3,8 @@ import CardPlace from './Cards/CardPlace'
 import TogglePlace from './Cards/Toggle'
 import MenuPlace from './Cards/Menu'
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import CardP from './Cards/CardP';
+import Action from './Cards/Action';
+import ActionB from './Cards/ActionB';
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
     <TogglePlace/>
         <Switch>
             <Route exact path='/' component={CardPlace}/>
-            <Route path='/section/1' component={CardP}/>
-            <Route path='/section/2' component={CardP}/>
+            <Route path='/section/1' component={Action}/>
+            <Route path='/section/2' component={ActionB}/>
         </Switch>
     </div>
 </Router>
